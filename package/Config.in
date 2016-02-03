@@ -442,6 +442,7 @@ source "package/python3/Config.in"
 if BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3
 menu "external python modules"
 source "package/python-bottle/Config.in"
+source "package/python-gobject/Config.in"
 source "package/python-configobj/Config.in"
 source "package/python-crc16/Config.in"
 source "package/python-dialog/Config.in"
