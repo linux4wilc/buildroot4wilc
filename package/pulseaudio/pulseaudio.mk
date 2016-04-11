@@ -15,7 +15,7 @@ PULSEAUDIO_CONF_OPT = \
 	--disable-default-build-tests \
 	--disable-legacy-runtime-dir \
 	--disable-legacy-database-entry-format \
-	--disable-manpages
+	--disable-manpages --disable-bluez4
 
 PULSEAUDIO_DEPENDENCIES = \
 	host-pkgconf libtool json-c libsndfile speex host-intltool \
@@ -32,6 +32,13 @@ PULSEAUDIO_DEPENDENCIES = \
 	$(if $(BR2_PACKAGE_WEBRTC_AUDIO_PROCESSING),webrtc-audio-processing) \
 	$(if $(BR2_PACKAGE_SYSTEMD),systemd)
 
+
+ifeq ($(BR2_PACKAGE_PULSEAUDIO_BLUEZ5),y)
+PULSEAUDIO_DEPENDENCIES += sbc
+PULSEAUDIO_CONF_OPT += --enable-bluez5
+else
+PULSEAUDIO_CONF_OPT += --disable-bluez5
+endif
 
 ifeq ($(BR2_PACKAGE_ORC),y)
 PULSEAUDIO_DEPENDENCIES += orc

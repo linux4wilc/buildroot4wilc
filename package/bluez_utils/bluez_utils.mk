@@ -4,12 +4,12 @@
 #
 ################################################################################
 
-BLUEZ_UTILS_VERSION = 4.101
+BLUEZ_UTILS_VERSION = 5.16
 BLUEZ_UTILS_SOURCE = bluez-$(BLUEZ_UTILS_VERSION).tar.xz
 BLUEZ_UTILS_SITE = $(BR2_KERNEL_MIRROR)/linux/bluetooth
 BLUEZ_UTILS_INSTALL_STAGING = YES
-BLUEZ_UTILS_DEPENDENCIES = dbus libglib2
-BLUEZ_UTILS_CONF_OPT = --enable-test --enable-tools
+BLUEZ_UTILS_DEPENDENCIES = dbus libglib2 libical udev readline
+BLUEZ_UTILS_CONF_OPT = --enable-test --enable-tools --disable-systemd --enable-datafiles --enable-experimental
 BLUEZ_UTILS_AUTORECONF = YES
 BLUEZ_UTILS_LICENSE = GPLv2+ LGPLv2.1+
 BLUEZ_UTILS_LICENSE_FILES = COPYING COPYING.LIB
