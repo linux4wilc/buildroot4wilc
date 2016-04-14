@@ -1,0 +1,15 @@
+--- a/src/daemon/default.pa.in
++++ b/src/daemon/default.pa.in
+@@ -150,9 +150,9 @@
+ 
+ ### If autoexit on idle is enabled we want to make sure we only quit
+ ### when no local session needs us anymore.
+-.ifexists module-console-kit@PA_SOEXT@
+-load-module module-console-kit
+-.endif
++#.ifexists module-console-kit@PA_SOEXT@
++#load-module module-console-kit
++#.endif
+ .ifexists module-systemd-login@PA_SOEXT@
+ load-module module-systemd-login
+ .endif
