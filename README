@@ -3,6 +3,7 @@ To build and use the buildroot stuff, do the following:
 1) select the defconfig of kernel version
  - sama5d4_wilc3000_k3.10_shield_defconfig
  - sama5d4_wilc3000_k3.18_shield_defconfig
+ - sama5d4_wilc3000_k4.1_shield_defconfig
 2) apply the defconfig 'make sama5d4_wilc3000_k3.10_shield_defconfig'
 3) run 'make menuconfig'
 4) select the packages you wish to compile
