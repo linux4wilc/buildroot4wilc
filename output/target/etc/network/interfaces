@@ -1,5 +1,0 @@
-auto wlan0
-allow-hotplug wlan0
-wpa-roam /etc/wpa_supplicant.conf
-iface wlan0 inet dhcp
-iface default inet dhcp
