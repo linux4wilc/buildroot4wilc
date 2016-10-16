@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-BLUEZ_UTILS_VERSION = 5.16
+BLUEZ_UTILS_VERSION = 5.21
 BLUEZ_UTILS_SOURCE = bluez-$(BLUEZ_UTILS_VERSION).tar.xz
 BLUEZ_UTILS_SITE = $(BR2_KERNEL_MIRROR)/linux/bluetooth
 BLUEZ_UTILS_INSTALL_STAGING = YES
