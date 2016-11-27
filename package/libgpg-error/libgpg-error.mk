@@ -5,7 +5,8 @@
 ################################################################################
 
 LIBGPG_ERROR_VERSION = 1.12
-LIBGPG_ERROR_SITE = ftp://ftp.gnupg.org/gcrypt/libgpg-error
+#LIBGPG_ERROR_SITE = ftp://ftp.gnupg.org/gcrypt/libgpg-error
+LIBGPG_ERROR_SITE = http://www.mirrorservice.org/sites/ftp.gnupg.org/gcrypt/libgpg-error/
 LIBGPG_ERROR_LICENSE = LGPLv2.1+
 LIBGPG_ERROR_LICENSE_FILES = COPYING.LIB
 LIBGPG_ERROR_INSTALL_STAGING = YES
