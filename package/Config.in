@@ -1043,6 +1043,7 @@ source "package/wvdial/Config.in"
 source "package/xinetd/Config.in"
 source "package/xl2tp/Config.in"
 source "package/znc/Config.in"
+source "package/wifi_capi/Config.in"
 
 endmenu
 
